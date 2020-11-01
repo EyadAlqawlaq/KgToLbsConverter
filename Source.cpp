@@ -5,12 +5,13 @@ int getNum();
 
 int main()
 {
-	float myWeight = 0;
+	int myWeight = 0;
 
-	/*This is the main body*/
+	myWeight = getNum();
+	printf("my weight is %d kilograms\n", myWeight);
+	float pounds = convertToLbs(myWeight);
 
-
-
+	printf("I weigh %f pounds\n", pounds);
 
 
 	return 0;
@@ -20,9 +21,9 @@ float convertToLbs(float kg)
 {
 	float pounds = kg * 2.2;
 
-	printf("I weigh %f pounds", pounds);
+	printf("my Weight in pounds is %f\n", pounds);
 
-	return 0;
+	return pounds;
 }
 
 
@@ -32,7 +33,7 @@ int getNum(void)
 	char record[121] = { 0 };
 	int number = 0;
 
-	printf("Enter a number\n");
+	printf("Enter your weight in kilograms\n");
 
 	fgets(record, 121, stdin);
 
