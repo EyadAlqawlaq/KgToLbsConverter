@@ -7,7 +7,7 @@ int main()
 {
 	float myWeight = 0;
 
-	
+	/*This is the main body*/
 
 
 
